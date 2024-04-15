@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $qtd = prompt("Quantos objetos tem o estoque?")
+
+        if ($qtd < 50) {
+            $res = ("Estoque BAIXO")
+        }
+        if ($qtd  > 50 || $qtd < 100 ) {
+            $res = ("Estoque NORMAL")
+        }
+        if ($qtd > 99) {
+            $res = "Estoque ALTO"
+        }
+        $cor = 'red'
+        document.write("<table border = '1'>")
+        document.write("<tr>")
+        document.write("<td>", "qtd")
+        document.write("</td>")
+        document.write("<td>", "Resultado")
+        document.write("</td>")
+        document.write("</tr>")
+
+        document.write("<tr>")
+        document.write("<td>", $qtd)
+        document.write("</td>")
+        document.write("<td>" + "<font color = '#0000ff'>" , $res , "</font>" )
+        document.write("</td>")
+        document.write("</tr>")
+
+
+        
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
